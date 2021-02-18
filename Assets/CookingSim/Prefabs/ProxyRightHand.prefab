@@ -546,9 +546,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3774963645622237341}
   - component: {fileID: 7249370744365619701}
-  - component: {fileID: 5995786143947608732}
+  - component: {fileID: 1404087540028824506}
   m_Layer: 0
-  m_Name: RightHand
+  m_Name: ProxyRightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -588,7 +588,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5995786143947608732
+--- !u!114 &1404087540028824506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -597,21 +597,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 4551043296342041127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bd6f25331bcdb548a2c07458f196123, type: 3}
+  m_Script: {fileID: 11500000, guid: 38519c6f7f020954ba10b4e34eb5d373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   flex:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Flex
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 4533699f-65e9-44d6-a809-52ae1bcf4eb8
+      m_Id: a713263d-6355-4a58-b7e5-2c033fdfc382
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
-    m_Reference: {fileID: 1284398033229226235, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
+    m_Reference: {fileID: 0}
+  fixedPose: 0
 --- !u!1 &5014436567129866241
 GameObject:
   m_ObjectHideFlags: 0

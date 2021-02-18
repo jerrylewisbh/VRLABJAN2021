@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 
 public enum HandPoses
 {
@@ -18,11 +18,31 @@ public class HandVisuals : MonoBehaviour
 {
 
     private static readonly int LockPoseHash = Animator.StringToHash("LockedPose");
+    private static readonly int ControllerSelectHash = Animator.StringToHash("ControllerSelectValue");
 
-    private Animator animator;
+    protected Animator animator;
 
 
-    private void Awake()
+
+    [SerializeField]
+    private InputActionProperty flex;
+
+
+    private void Update()
+    {
+        SetAnimatorInputValue(flex.action, ControllerSelectHash);
+    }
+
+    private void SetAnimatorInputValue(InputAction action, int hashAnimator)
+    {
+        if(action != null)
+        {
+            animator.SetFloat(hashAnimator, action.ReadValue<float>());
+        }
+    }
+
+
+    protected void Awake()
     {
         animator = GetComponent<Animator>();
     }

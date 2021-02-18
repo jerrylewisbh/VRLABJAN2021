@@ -532,9 +532,9 @@
                     "interactions": ""
                 },
                 {
-                    "name": "RightGripFlex",
+                    "name": "Flex",
                     "type": "Value",
-                    "id": "825f18d0-7302-4861-80a3-5135b8ad9016",
+                    "id": "a9362cd8-cbbd-481a-b07d-b4f0ccd5a946",
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
@@ -796,12 +796,12 @@
                 },
                 {
                     "name": "",
-                    "id": "f71de584-14c3-47b4-8abc-63277348283f",
+                    "id": "aa6780bd-ff63-490b-b4ee-daecd1031daf",
                     "path": "<XRController>{RightHand}/grip",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
-                    "action": "RightGripFlex",
+                    "action": "Flex",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
